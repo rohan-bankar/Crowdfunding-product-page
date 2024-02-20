@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap');
+body{
+    background-color: #F5F7F1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Commissioner';
+    background-image: url(./images/image-hero-desktop.jpg);
+    background-repeat: no-repeat;
+}
+
+.container{
+}
+
+.hamburger,
+.close-menu{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    margin: 50px 70px;
+}
+
+.navItem{
+    text-align: end;
+    width: 90%;
+}
+
+.navItem a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.inner-container{
+    margin: 0 350px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    position: relative;
+    top:190px ;
+}
+
+.title,
+.title-bio{
+    text-align: center;
+}
+
+.mastercraft-logo{
+    position: absolute;
+    top: -30px;
+    left: 330px;
+}
+
+.project-funding-btn{
+    display: flex;
+    flex-direction: row;
+}
+
+.support-btn{
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    border-style: none;
+    color: white;
+    background-color: hsl(176, 50%, 47%);
+    cursor: pointer;
+}
+
+.bookmark{
+    display: flex;
+    flex-direction: row;
+    position:absolute;
+    right: 150px;
+}
+
+.bookmark-btn{
+    background-color:#F5F7F1;
+    padding: 15px;
+    padding-left: 30px;
+    position: absolute;
+    left: 30px;
+    top: -15px;
+    border-radius: 0 30px 30px 0;
+}
+
+.bookMark-icon{
+    height: 50px;
+    z-index: 1;
+}
+
+.count{
+    position: relative;
+    top: 200px;
+    margin: 0 350px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.flex-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.donation,
+.supporters{
+    border-right: 1px solid;
+}
+
+.donation-count,
+.supporters-count,
+.days-count{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.donation-target,
+.total-backers,
+.days-left{
+    color: hsl(0, 0%, 48%);
+}
+
+progress{
+width: 100%;
+height: 30px;
+}
+
+.about{
+    position: relative;
+    top: 210px;
+    margin: 0 350px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.about-paragraph,
+.bamboo-stand-paragraph,
+.black-edition-stand-paragraph,
+.mahogany-edition-paragraph{
+    color: hsl(0, 0%, 48%);
+    line-height: 30px;
+}
+
+.bamboo-stand,
+.black-edition-stand,
+.mahogany-edition{
+    border: 1px solid;
+    margin-bottom: 20px;
+    border-color: hsl(0, 0%, 48%);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.bamboo-stand-title,
+.black-edition-stand-title,
+.mahogany-edition-title{
+    display: flex;
+}
+
+.bamboo-pledge,
+.black-edition-pledge,
+.mahogany-edition-pledge{
+    position: absolute;
+    right: 80px;
+    color: hsl(176, 50%, 47%);
+}
+
+.bamboo-stand-count,
+.black-edition-stand-count,
+.mahogany-edition-count{
+    display: flex;
+}
+
+.dayRemaining{
+    font-size: 30px;
+}
+
+.bamboo-stand-reward-btn,
+.black-edition-stand-reward-btn,
+.mahogany-edition-reward-btn{
+    position: absolute;
+    right: 80px;
+    padding: 15px;
+    border-radius:30px;
+    border-style: none;color: white;
+    background-color: hsl(176, 50%, 47%);
+}
+
+
+
