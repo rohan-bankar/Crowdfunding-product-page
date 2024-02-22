@@ -10,6 +10,11 @@ body{
 }
 
 .container{
+    
+}
+
+.page-1{
+    /* opacity: .1; */
 }
 
 .hamburger,
@@ -58,6 +63,7 @@ body{
 .project-funding-btn{
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
 }
 
 .support-btn{
@@ -69,12 +75,15 @@ body{
     background-color: hsl(176, 50%, 47%);
     cursor: pointer;
 }
-
+.support-btn:hover{
+    background-color: hsl(176, 72%, 28%);
+}
 .bookmark{
     display: flex;
     flex-direction: row;
     position:absolute;
     right: 150px;
+    cursor: pointer;
 }
 
 .bookmark-btn{
@@ -82,15 +91,22 @@ body{
     padding: 15px;
     padding-left: 30px;
     position: absolute;
-    left: 30px;
-    top: -15px;
     border-radius: 0 30px 30px 0;
+    top: -15px;
+}
+
+.bookmark-btn:hover{
+    color:hsl(176, 72%, 28%);
 }
 
 .bookMark-icon{
+    position: absolute;
     height: 50px;
     z-index: 1;
+    left:-30px;
+    /* display: none; */
 }
+
 
 .count{
     position: relative;
@@ -143,19 +159,29 @@ height: 30px;
 .about-paragraph,
 .bamboo-stand-paragraph,
 .black-edition-stand-paragraph,
-.mahogany-edition-paragraph{
+.mahogany-edition-paragraph,
+.no-reward-paragraph{
     color: hsl(0, 0%, 48%);
     line-height: 30px;
+    margin: 0;
 }
 
 .bamboo-stand,
-.black-edition-stand,
+.black-edition-stand{
+    border: 1px solid;
+    margin-bottom: 20px;
+    border-color: hsl(0, 0%, 48%);
+    padding: 25px;
+    border-radius: 10px;
+}
+
 .mahogany-edition{
     border: 1px solid;
     margin-bottom: 20px;
     border-color: hsl(0, 0%, 48%);
     padding: 25px;
     border-radius: 10px;
+    opacity: .5;
 }
 
 .bamboo-stand-title,
@@ -183,15 +209,165 @@ height: 30px;
 }
 
 .bamboo-stand-reward-btn,
-.black-edition-stand-reward-btn,
+.black-edition-stand-reward-btn{
+    position: absolute;
+    right: 80px;
+    padding: 15px;
+    border-radius:30px;
+    border-style: none;
+    color: white;
+    background-color: hsl(176, 50%, 47%);
+    cursor: pointer;
+}
+
+.bamboo-stand-reward-btn:hover,
+.black-edition-stand-reward-btn:hover{
+    background-color:hsl(176, 72%, 28%);
+}
+
 .mahogany-edition-reward-btn{
     position: absolute;
     right: 80px;
     padding: 15px;
     border-radius:30px;
     border-style: none;color: white;
-    background-color: hsl(176, 50%, 47%);
+    cursor: pointer;
+    background-color: hsl(0, 0%, 48%);
+}
+.pledge-page{
+    display: none;
+    position: absolute;
+    margin: 0 350px;
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+    top: 200px;
 }
 
+.support-container{
+    /* display:none; */
+}
 
+.bamboo-stand-lineOne,
+.no-reward-lineOne,
+.black-edition-lineOne,
+.mahogany-edition-lineOne{
+   display: flex;
+   width: 100%;
+}
 
+.no-reward-title strong:hover,
+.bamboo-stand-title strong:hover,
+.black-edition-title strong:hover{
+    color: hsl(176, 50%, 47%);
+    cursor: pointer;
+}
+
+.pledgePrice{
+    margin-left: 50px;
+}
+
+.close-model{
+    position: absolute;
+    top: 50px;
+    right: 70px;
+    cursor: pointer;
+}
+
+.daysLeftBamboo{
+    margin-left: 200px;
+}
+
+.daysLeftBlack{
+    margin-left: 160px;
+}
+
+.daysLeftMahogany{
+    margin-left: 110px;
+}
+
+.daysLeftBamboo,
+.daysLeftBlack,
+.daysLeftMahogany{
+    font-size: 20px;
+}
+
+.no-reward-container,
+.bamboo-stand-container,
+.black-edition-container{
+    border: 1px solid;
+    margin-bottom: 20px;
+    border-color: hsl(0, 0%, 48%);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.mahogany-edition-container{
+    border: 1px solid;
+    margin-bottom: 20px;
+    border-color: hsl(0, 0%, 48%);
+    padding: 25px;
+    border-radius: 10px;
+    opacity: .5;
+}
+
+.pledgeEnter-bamboo,
+.pledgeEnter-black-edition{
+    display: flex;
+}
+
+.pledgeAmountContainer{
+    position: relative;
+    left: 400px;
+    top: 10px;
+}
+
+.pledgeAmount{
+    width: 80px;
+    height: 40px;
+    border-radius:30px;
+    border: 1px solid;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.continue-btn{
+    width: 80px;
+    height: 40px;
+    border-style: none;
+    border-radius: 30px;
+    color: white;
+    background-color: hsl(176, 50%, 47%);
+    cursor: pointer;
+}
+
+.continue-btn:hover{
+    background-color:hsl(176, 72%, 28%) ;
+}
+
+.support-container{
+    display: none;
+    position: absolute;
+    margin: 0 450px;
+    text-align: center;
+    padding: 30px;
+    line-height: 25px;
+    background-color: white;
+    top: 400px;
+}
+
+.gotIt{
+    width: 80px;
+    height: 40px;
+    border-style: none;
+    border-radius: 30px;
+    color: white;
+    background-color: hsl(176, 50%, 47%);
+    cursor: pointer;
+}
+
+.gotIt:hover{
+    background-color:hsl(176, 72%, 28%) ;
+}
