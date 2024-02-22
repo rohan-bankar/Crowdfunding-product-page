@@ -9,14 +9,6 @@ body{
     background-repeat: no-repeat;
 }
 
-.container{
-    
-}
-
-.page-1{
-    /* opacity: .1; */
-}
-
 .hamburger,
 .close-menu{
     display: none;
@@ -104,7 +96,6 @@ body{
     height: 50px;
     z-index: 1;
     left:-30px;
-    /* display: none; */
 }
 
 
@@ -244,10 +235,6 @@ height: 30px;
     top: 200px;
 }
 
-.support-container{
-    /* display:none; */
-}
-
 .bamboo-stand-lineOne,
 .no-reward-lineOne,
 .black-edition-lineOne,
@@ -370,4 +357,118 @@ height: 30px;
 
 .gotIt:hover{
     background-color:hsl(176, 72%, 28%) ;
+}
+
+@media screen and (max-width:600px) {
+    body{
+        background-image: url(./images/image-hero-mobile.jpg);
+        background-size: contain;
+    }
+
+    .navbar{
+        display: block;
+        margin: 10px;
+    }
+
+    .hamburger{
+        display: block;
+        float: right;
+    }
+
+    .close-menu{
+        float: right;
+    }
+    
+    .inner-container{
+        margin: 20px;
+        padding: 10px;
+        top: 120px;
+    }
+    .count{
+        margin: 20px;
+        padding: 10px;
+        top: 120px;
+    }
+    .about{
+        margin: 20px;
+        padding: 10px;
+        top:120px;
+    }
+
+    .mastercraft-logo{
+        left: 128px;
+    }
+
+    .bookmark-btn{
+        display: none;
+    }
+
+    .support-btn{
+        width: 210px;
+    }
+
+    .bookMark-icon{
+        left: 50px;
+    }
+
+    .flex-container{
+        grid-template-columns: 1fr;
+    }
+
+    .donation,
+    .supporters{
+    border-bottom: 1px solid;
+    border-right: none;
+    }
+    .bamboo-pledge,
+    .black-edition-pledge,
+    .mahogany-edition-pledge{
+        right: 120px;
+        margin-top: 42px;
+    }  
+    
+    .bamboo-stand-reward-btn,
+    .black-edition-stand-reward-btn,
+    .mahogany-edition-reward-btn{
+        margin-top: 12px;
+    }
+
+    .navItem{
+        display:grid;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        height: 19%;
+        width: 80%;
+        margin: 0 50px;
+        background-color: white;
+        border-radius: 10px;
+        visibility: hidden;
+    }
+    .navItem a{
+        margin: 5px 50px;
+        color: black;
+    }
+
+    .pledge-page{
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .daysLeftBamboo{
+        margin-left: 0px;
+    }
+    
+    .daysLeftBlack{
+        margin-left: 0px;
+    }
+    
+    .daysLeftMahogany{
+        margin-left: 0px;
+    }
+
+    .pledgeAmountContainer{
+        left: 0;
+    }
+
 }

@@ -1,6 +1,8 @@
 const supportBtn = document.querySelector(".support-btn");
 const close = document.querySelector(".close-model");
 const continueBtn = document.querySelector(".continue-btn");
+const hamburger = document.querySelector(".hamburger");
+const closeBtn = document.querySelector(".close-menu");
  function visible(){
     document.querySelector(".pledge-page").style.display = 'block';
     document.querySelector(".bookMark-icon").style.display = 'none';  
@@ -63,3 +65,15 @@ document.addEventListener("DOMContentLoaded", function() {
   continueBtn.addEventListener('click',()=>{
     thankYouCard();
   })
+
+  hamburger.onclick = function(){
+    document.querySelector(".navItem").style.visibility = 'visible';
+    document.querySelector(".hamburger").style.display = 'none';
+    document.querySelector(".close-menu").style.display = 'block';
+  }
+
+  closeBtn.onclick = function(){
+    document.querySelector(".navItem").style.visibility = 'hidden';
+    document.querySelector(".hamburger").style.display = 'block';
+    document.querySelector(".close-menu").style.display = 'none';
+  }
