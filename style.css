@@ -343,6 +343,7 @@ height: 30px;
     line-height: 25px;
     background-color: white;
     top: 400px;
+    border-radius: 10px;
 }
 
 .gotIt{
@@ -469,6 +470,11 @@ height: 30px;
 
     .pledgeAmountContainer{
         left: 0;
+    }
+
+    .support-container{
+        margin: 20px;
+        padding: 20px;
     }
 
 }
